@@ -11,17 +11,17 @@ CREATE TABLE `works` (
   `worklink` varchar(100) NOT NULL,
   `piclink` varchar(100) NOT NULL,
   `videolink` varchar(100) DEFAULT NULL,
-  `description` varchar(100) DEFAULT NULL,
+  `description` varchar(200) DEFAULT NULL,
   `rate` int NOT NULL,
   PRIMARY KEY (`worksid`)
 );
 
 CREATE TABLE `genre` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `genreid` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `image_background` varchar(45) ,
-  `description` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `description` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`genreid`)
 );
 
 CREATE TABLE `genrebridge` (
@@ -43,9 +43,8 @@ INSERT INTO genre VALUES(106,'Mysql &Oracle','mysql.png ','database system');
 INSERT INTO genre VALUES(107,'Cloud &DevOps','cloud.png ','Public and Private Cloud architecture and devops for develop team');
 INSERT INTO genre VALUES(108,'infranstructure','infra.jpeg ','IT systems infrastructure and storage');
 
-
-INSERT INTO works VALUES(200,'React system for Elvis works','worklink','pic','videolink','using React as front end tools and flask as API to build this system for demostrate the Elvis works',85);
 INSERT INTO works VALUES(199,'Agresearch Augement Reality system','worklink','pic','videolink','using Flutter, FastAPI and ARkit to built the whole Augement reality system. the Elvis works',90);
+INSERT INTO works VALUES(200,'React system for Elvis works','worklink','pic','videolink','using React as front end tools and flask as API to build this system for demostrate the Elvis works',85);
 INSERT INTO works VALUES(201,'China Camping sites map','www.campingmap.site','pic','videolink','Using IOS Object C to code the original system for collect over 300 China camping site, using spring boot and swagger mysql as backend system. Officaly published in app store',90);
 INSERT INTO works VALUES(202,'Lincoln University Internship system','worklink','pic','videolink','using falsk, python, Jquery, Ajax, Echart to built the whole internship managermen. the Elvis works',90);
 INSERT INTO works VALUES(203,'Lincoln University GYM system','worklink','pic','videolink','using falsk, python, HTML CSS to build this system for demostrate the Elvis works',80);
