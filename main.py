@@ -20,7 +20,7 @@ from fastapi.middleware.cors import CORSMiddleware
 dbconn = None
 connection = None
 
-app = FastAPI()
+app = FastAPI(openapi_url="/api/openapi.json")
 
 def setup_cors(app: FastAPI):
     app.add_middleware(
