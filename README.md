@@ -10,6 +10,7 @@
 - made by python and fastAPI docker
 - Thanks
 
+![image](https://github.com/jiangc7/Elvis-API/assets/118397495/6ad7b3ef-c111-40a0-91e6-b9a025bf71ed)
 
 
 ## Assumptions and design decisions
