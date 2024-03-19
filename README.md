@@ -36,6 +36,20 @@ Please refer to the FastAPI documentation at www.elvisjiang/api/docs for detaile
 Acknowledgments
 We'd like to express our gratitude to the following resources that contributed to this project:
 
+### 3. how to run the API
+1. using uvicorn
+   $ uvicorn main:app --reload &
+   $ ps -ef | grep uvicorn
+2. using screen function
+   $ sreen -S newwindow
+   $ uvicorn main:app --reload
+   Ctrl + a + d
+   $ screen -d
+3. systemctl run in backend
+4. Docker system
+   
+
+
 ## Thanks
 
 [IconMonster](https://getbootstrap.com/)  
