@@ -40,13 +40,15 @@ We'd like to express our gratitude to the following resources that contributed t
 1. using uvicorn
    $ uvicorn main:app --reload &
    $ ps -ef | grep uvicorn
-2. using screen function
+   $ http://url/docs
+     swagger interface
+3. using screen function
    $ sreen -S newwindow
    $ uvicorn main:app --reload
    Ctrl + a + d
    $ screen -d
-3. systemctl run in backend
-4. Docker system
+4. systemctl run in backend
+5. Docker system
    
 
 
