@@ -49,6 +49,14 @@ We'd like to express our gratitude to the following resources that contributed t
    $ screen -d
 4. systemctl run in backend
 5. Docker system
+   $ docker build -t elvisapi .
+   $ docker run -p 8000:8000 elvisapi
+
+   Deploy to the ECS
+   1. launch a clust
+   2. config a task, and attached images from ecr, run task
+   3. config a service, includ the task, run
+   4. 
    
 
 
